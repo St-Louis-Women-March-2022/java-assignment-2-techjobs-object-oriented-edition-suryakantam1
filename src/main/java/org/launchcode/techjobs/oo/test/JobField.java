@@ -1,6 +1,6 @@
 package org.launchcode.techjobs.oo.test;
 
-public class JobField {
+public abstract class JobField {
     private int id;
     private String value;
     private static int nextId = 1;
