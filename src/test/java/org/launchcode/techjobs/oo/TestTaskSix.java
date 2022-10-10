@@ -4,11 +4,17 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
-
+import static org.junit.Assert.*;
 /**
  * Created by LaunchCode
  */
 public class TestTaskSix extends AbstractTest {
+    @Test
+    public void testSettingJobId(){
+        Job job1 = new Job();
+        Job job2 = new Job();
+        assertNotEquals(job1.getId(), job2.getId());
+    }
 
     @Test
     public void testJobFieldClassExists() {
